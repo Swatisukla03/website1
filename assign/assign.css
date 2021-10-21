@@ -259,10 +259,9 @@ img{
   .gallery h2:after {
     --direction: right;
   }
-  
-  @media (max-width: 600px) {
+@media (max-width: 1000px) {
     .menu {
-      perspective: 600px;
+      perspective: 800px;
     }
     [aria-controls="menu-list"] {
       display: block;
@@ -272,7 +271,6 @@ img{
     .menu ul {
       max-height: 0;
       overflow: hidden;
-      
       transform: rotateX(90deg);
       transition: all 0.5s;
     }
@@ -297,6 +295,25 @@ img{
   
   }
   
+  @media (max-width: 700px) {
+    .top {
+      grid-template-areas:
+        "hero hero"
+        "cta1 cta2"
+    }
+    /* About */
+    .about {
+      grid-template-columns: 1fr;
+    }
+  }
   
-   
+  @media (max-width: 500px) {
+    .top {
+      grid-template-areas:
+        "hero"
+        "cta1"
+        "cta2"
+    }
+  }
+  
   
